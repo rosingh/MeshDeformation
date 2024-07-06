@@ -10,8 +10,8 @@ include(libigl)
 igl_include(glfw)
 # Other modules you could enable
 #igl_include(embree)
-#igl_include(imgui)
-#igl_include(opengl)
+igl_include(imgui)
+igl_include(opengl)
 #igl_include(stb)
 #igl_include(predicates)
 #igl_include(xml)
@@ -33,8 +33,8 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
   igl::glfw
   ## Other modules you could link to
   # igl::embree
-  # igl::imgui
-  # igl::opengl
+  igl::imgui
+  igl::opengl
   # igl::stb
   # igl::predicates
   # igl::xml
